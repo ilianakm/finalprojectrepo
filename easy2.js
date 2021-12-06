@@ -19,7 +19,7 @@ const gameWonState = {
 function gameSetup() {
   const gameArea = document.getElementById('game-area-easy');
   const img = new Image();
-  // Board Image: Our own picture choice
+  // Board Image: Our own picture choice, the polar bear picture
   img.src = "https://cdn.glitch.me/322c0444-bdb6-400c-8c7b-568c71c6bd72%2FGettyImages-155141288-5c513be646e0fb00014a2f4c.jpeg?v=1637185396945";
 
   img.onload = function() {
@@ -161,11 +161,11 @@ function makePlay(tileId, swipeDirection) {
   }
   
 //https://www.w3schools.com/jsref/prop_style_display.asp
-
+// actions after a user has won the game
   if (checkGameWon()) {
     document.getElementById('randomize-button').style.display = 'block';
     document.getElementById('next-button').style.display = 'block';
-     var bMusic = new Audio('https://cdn.glitch.me/322c0444-bdb6-400c-8c7b-568c71c6bd72%2Fapplause%20audio.wav?v=1638555464182')
+     var bMusic = new Audio('https://cdn.glitch.me/322c0444-bdb6-400c-8c7b-568c71c6bd72%2Fapplause%20audio.wav?v=1638555464182') //added sound clapping effects for win
 	    bMusic.play()
     document.body.classList.add('winning-animation');
     setTimeout(function() {
