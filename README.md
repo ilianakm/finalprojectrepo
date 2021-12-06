@@ -4,7 +4,7 @@ Team members: Yanyin Wu, Iliana Kirkman-Moriarty, Carina Halcomb
 
 Our project name is Story Game.
 
-We want to tell people the story of climate change. So we come up with the idea that people can see the effects of climate change through playing a game, which is the sliding puzzle game. In this game, the users need to solve the puzzle to see what is the story we trying to tell. We have the level of Easy, Medium, and Hard. At level Easy, the tiles is 3 x 3, at Medium, it is 4 x 4, and at hard, it is 5 x 5.
+We want to tell people the story of climate change. So we come up with the idea that people can see the effects of climate change through playing a game, which is the sliding puzzle game. In this game, the users need to solve the puzzle to see what is the story we trying to tell. We have the level of Easy, Medium, and Hard. At level Easy, the tiles are 3 x 3, at Medium, they are 4 x 4, and at hard, they are 5 x 5.
 
 Within the levels, we have 3 different pictures to tell the story, one show the effect of the sea level rising, ice melting, and hot weather causing drought.
 
