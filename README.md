@@ -1,4 +1,4 @@
-# final project idea
+# final project
 
 Team members: Yanyin Wu, Iliana Kirkman-Moriarty, Carina Halcomb
 
