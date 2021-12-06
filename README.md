@@ -16,3 +16,5 @@ After the user finish solving, there will be a button, "Next" showing to go to t
 
 
 Code remixed: https://glitch.com/~sliding-photo-puzzle
+
+Our Glitch code: https://glitch.com/edit/#!/final-project-artg2260
