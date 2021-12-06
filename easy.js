@@ -120,7 +120,7 @@ function randomizeBoard() {
   }
   drawGame();
   document.getElementById('randomize-button').style.display = 'none';
-  document.getElementById('next-button').style.display = 'none';
+  document.getElementById('next-button').style.display = 'none'; // after the game won, the button will show up and user can click on it to the next image
 
 }
 
@@ -166,7 +166,7 @@ function makePlay(tileId, swipeDirection) {
   if (checkGameWon()) {
     document.getElementById('randomize-button').style.display = 'block';
       document.getElementById('next-button').style.display = 'block';
-    var bMusic = new Audio('https://cdn.glitch.me/322c0444-bdb6-400c-8c7b-568c71c6bd72%2Fapplause%20audio.wav?v=1638555464182')
+    var bMusic = new Audio('https://cdn.glitch.me/322c0444-bdb6-400c-8c7b-568c71c6bd72%2Fapplause%20audio.wav?v=1638555464182') //added the sound for when game won, it creates the applause sound
 	    bMusic.play()
     document.body.classList.add('winning-animation');
     setTimeout(function() {
