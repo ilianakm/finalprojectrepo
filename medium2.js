@@ -153,10 +153,11 @@ function makePlay(tileId, swipeDirection) {
       moveTile(tileId, tileLoc, nullLoc);
     }
   }
+  //actions after game is won
   if (checkGameWon()) {
     document.getElementById('randomize-button').style.display = 'block';
     document.getElementById('next-button').style.display = 'block';
-     var bMusic = new Audio('https://cdn.glitch.me/322c0444-bdb6-400c-8c7b-568c71c6bd72%2Fapplause%20audio.wav?v=1638555464182')
+     var bMusic = new Audio('https://cdn.glitch.me/322c0444-bdb6-400c-8c7b-568c71c6bd72%2Fapplause%20audio.wav?v=1638555464182') //cheering sound we added after win
 	    bMusic.play()
     document.body.classList.add('winning-animation');
     setTimeout(function() {

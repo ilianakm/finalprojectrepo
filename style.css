@@ -161,6 +161,8 @@ footer {
   text-align: center;
 }
 
+
+/* in order for the game areas to all work correctly we had to add different grid parameters for each one */
 #game-area-easy {
   display: grid;
   grid-gap: 3px;
@@ -175,6 +177,7 @@ footer {
   background-size: calc(80vh * var(--game-aspect-ratio)) 80vh;
   user-select: none;
 }
+
 
 #game-area-medium {
   display: grid;
@@ -194,19 +197,6 @@ footer {
   grid-gap: 3px;
   grid-template-rows: repeat(5, 1fr);
   grid-template-columns: repeat(5, 1fr);
-  position: relative;
-  margin: 1em auto;
-  height: 80vh;
-  width: calc(80vh * var(--game-aspect-ratio));
-  background-size: calc(80vh * var(--game-aspect-ratio)) 80vh;
-  user-select: none;
-}
-
-#game-area-expert {
-  display: grid;
-  grid-gap: 3px;
-  grid-template-rows: repeat(6, 1fr);
-  grid-template-columns: repeat(6, 1fr);
   position: relative;
   margin: 1em auto;
   height: 80vh;

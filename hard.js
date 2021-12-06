@@ -38,7 +38,7 @@ function gameSetup() {
     tileSetup();
     drawGame();
     document.getElementById('randomize-button').style.display = 'block';
-    document.getElementById('next-button').style.display = 'none';
+    document.getElementById('next-button').style.display = 'none'; //added the next-button, but it won't show up yet
   };
 }
 
@@ -155,7 +155,8 @@ function makePlay(tileId, swipeDirection) {
   }
   if (checkGameWon()) {
     document.getElementById('randomize-button').style.display = 'block';
-    document.getElementById('next-button').style.display = 'block';
+    document.getElementById('next-button').style.display = 'block'; //after the game won, it will show up and user can click on it to the next image
+    //music added when the game won, the applause sound
     var bMusic = new Audio('https://cdn.glitch.me/322c0444-bdb6-400c-8c7b-568c71c6bd72%2Fapplause%20audio.wav?v=1638555464182')
 	    bMusic.play()
     document.body.classList.add('winning-animation');

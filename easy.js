@@ -20,7 +20,7 @@ const gameWonState = {
 function gameSetup() {
   const gameArea = document.getElementById('game-area-easy');
   const img = new Image();
-  // Board Image: Our own picture choice 
+  // Board Image: Our own picture choice
   img.src = "https://cdn.glitch.me/322c0444-bdb6-400c-8c7b-568c71c6bd72%2Fd.jpeg?v=1638380025176";
 
   img.onload = function() {
@@ -39,7 +39,7 @@ function gameSetup() {
     tileSetup();
     drawGame();
     document.getElementById('randomize-button').style.display = 'block';
-    document.getElementById('next-button').style.display = 'none'; //we add the the next button but it won't show up at this point
+    document.getElementById('next-button').style.display = 'none';
     
   };
 }
@@ -120,7 +120,7 @@ function randomizeBoard() {
   }
   drawGame();
   document.getElementById('randomize-button').style.display = 'none';
-  document.getElementById('next-button').style.display = 'none'; // we add the the next button but it won't show up at this point
+  document.getElementById('next-button').style.display = 'none'; //user can click on it to the next image, but it won't show up at this point
 
 }
 
@@ -165,8 +165,9 @@ function makePlay(tileId, swipeDirection) {
 
   if (checkGameWon()) {
     document.getElementById('randomize-button').style.display = 'block';
-      document.getElementById('next-button').style.display = 'block'; //after the game won, the button will show up and user can click on it to the next image
-    var bMusic = new Audio('https://cdn.glitch.me/322c0444-bdb6-400c-8c7b-568c71c6bd72%2Fapplause%20audio.wav?v=1638555464182') //added the sound for when game won, it creates the applause sound
+      document.getElementById('next-button').style.display = 'block'; //after the game won, the next-button will show up and user can click on it to show the next image
+    //music added when the game won, the applause sound
+    var bMusic = new Audio('https://cdn.glitch.me/322c0444-bdb6-400c-8c7b-568c71c6bd72%2Fapplause%20audio.wav?v=1638555464182') //added cheering noises once game is won
 	    bMusic.play()
     document.body.classList.add('winning-animation');
     setTimeout(function() {
