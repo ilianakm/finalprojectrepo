@@ -15,3 +15,5 @@ After the user finish solving, the background would change colors and there is t
 
 
 Code remixed: https://glitch.com/~sliding-photo-puzzle
+
+The website can be viewed at: https://final-project-artg2260.glitch.me/index.html
